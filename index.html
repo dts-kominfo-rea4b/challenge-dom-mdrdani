@@ -5,13 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - DOM</title>
+    <style>
+      body {
+        font-family: 'Ubuntu', cursive;
+      }
+      #app {
+        width: 400px;
+        height: 600px;
+        background-color: #dd835a;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        text-align: center;
+      }
+      #todo-title {
+        color: white;
+        border-bottom: 1px solid lightgray;
+        padding: 10px 0px;
+      }
+      #todo-input,
+      #todo-submit {
+        padding: 10px;
+        border-radius: 5px;
+        border: 0;
+      }
+      #todo-input {
+        width: 60%;
+        outline-color: #f7f6fa;
+      }
+      #todo-submit {
+        background-color: #f0f0f0;
+        box-shadow: 0 0 3px black;
+        cursor: pointer;
+      }
+      #todo-output {
+        padding: 10px;
+      }
+      #todo-output li {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: 0 10px;
+        border-bottom: 1px solid darkgrey;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
       <!-- TODO: Buatlah sebuah header dengan id todo-title -->
       <h1 id="todo-title">Todo-List</h1>
       <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
-      <p id="todo-subtitle">Today I Need to</p>
+      <p id="todo-subtitle">~Today I Need to~</p>
       <!-- Section: input -->
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
       <input type="text" id="todo-input" />
